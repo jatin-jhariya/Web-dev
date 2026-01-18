@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inline v/s block elements.
+     Note: we can check if a given element is block element or inline element by inspect.  -->
+
+    <!-- inline element= it occupies the necessary width and don't start from new line. eg, anchor and image element -->
+    <a href="https://openai.com/index/chatgpt/">Chatgpt</a>
+    <a href="https://www.netflix.com/in/">Netflix</a>
+    <hr>
+
+    <!-- block element= it occupies the full-width available(whole block) and start from the new line. eg, paragraph and heading element -->
+    <h1>Hello World</h1>
+    <p>Hi, I welcome you all in this amazing world.</p>
+    <hr>
+
+    <!-- Div element= used to hold other html elements or group elements together and it is a block element.  -->
+    <div>
+        <a href="https://openai.com/index/chatgpt/">Chatgpt</a>
+        <a href="https://www.netflix.com/in/">Netflix</a>
+        <hr>
+    </div>
+    <a href="https://www.instagram.com/?flo=true">instagram</a>
+    <hr>
+
+    <!-- span element= container used to hold other html elements or group elements together and it is an inline element. eg quora -->
+    <span>
+        <a href="https://openai.com/index/chatgpt/">Chatgpt</a>
+        <a href="https://www.netflix.com/in/">Netflix</a>
+    </span>
+    <a href="https://www.instagram.com/?flo=true">instagram</a>
+    <hr>
+
+    <!-- hr tag= horizontal rule element used to divide the line or breaks the line. -->
+    <p>HI, I am Jatin.</p>
+    <p>I am a Software Developer.</p>
+    <hr>
+
+    <!-- sub and sup tag:-
+    sub tag= used to add subscript to the content.
+    eg. formula of water
+    sup tag= used to add superscript to the content.
+    eg. formula of a+b to the whole square -->
+
+    <p>H<sub>2</sub>O</p>
+    <p>(a+b)<sup>2</sup></p>
+    <hr>
+
+    <!-- Q1. print the following on the screen using <h1> heading elements:- 
+        pythagoras theorem and formula of glucose  -->
+
+    <h1>Pythagoras theorem says: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></h1>
+    <h1>Formula for Glucose is: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></h1>
+    <hr>
+
+    <!-- semantic markup= markup that tells meaning of the tag by their name. 
+     we study many tags inside it some of them are as follows: 
+     header= basically it is the heading part of the content where we write like site name and login and signup. 
+     footer= it is the bottom part of the webpage where we write like contact info or other related links.
+     main tag= as per the name given we write main contents inside it.
+     nav tag= links that takes users from one section/page to the other section/page/.
+    article tag= as per the name given we write articles inside it.
+    section tag= used to group together contents.
+    aside tag= used for indirect related links. -->
+
+    <!-- Q2. add semantic markup to your portfolio page. -->
+
+    <header>
+        <h1>Jatin Jhariya</h1>
+        <p>I love to explore new thing :)</p>
+        <img src="Jatin-2.jpeg" alt="jatin's-pic" height="150" width="150">
+    </header>
+
+    <main>
+        <section>
+            <h2>Education:</h2>
+            <ul>
+                <li><b>10th(CBSE):</b>8.2GPA</li>
+                <li><b>12th(CBSE):</b>6.7GPA</li>
+                <li><b>B.TECH(CSE):</b>7.03CGPA</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills:</h2>
+            <ul>
+                <li>C & C++(intermediate level)</li>
+                <li>Java (beginner level)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hobbies:</h2>
+            <ul>
+                <li>Singing & guitar playing</li>
+                <li>Reading novels</li>
+            </ul>
+        </section>
+        <section>
+            <p>
+            <H2>Achievements:</H2>
+            <ul>
+                <li>Represented myself as a captain in state level cricket.</li>
+                <li>Participated in kala utsav in JNV Katni.</li>
+            </ul>
+
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacts:</h2>
+        <ul>
+            <li>7723899663</li>
+            <li>jatinjhariya0710@gmail.com</li>
+            <li><b>Linkedin: </b><a
+                    href="https://in.linkedin.com/in/jatin-jhariya-131bb3317?trk=people-guest_people_search-card">Profile</a>
+            </li>
+        </ul>
+        <p>fall in &#10084; with DSA.</p>
+    </footer>
+    <hr>
+
+    <!-- html entities= piece of string that begins with ampersand(&) and ends with semicolon(;)
+    used for reserved characters and special characters.
+    some of the html entities are given below  -->
+    <p>a &lt; b</p>
+    <p>a &gt; b</p>
+    <p>a &amp; b</p>
+    <p>a &amp; &quot;b&quot;</p>
+    <p>I &#10084; DSA</p>
+    <hr>
+
+    <!-- Q3. print the following on the screen using an h1 heading element and entities. search for suitable cloud and rain entities. -->
+
+    <h1>The sky is cloudy &#9729; &amp; it will rain &#9748; today.</h1>
+    <hr>
+
+    <!-- emmets= shortcut way to generate a code.
+     eg ul>li*5 , h1>p+img+div <-apply it for better understanding. -->
+
+    <!-- understanding html5 and how html works
+    html5= html+ modern technologies(extra features)
+    html standard= document that tells browser how html should work. -->
+
+    <!-- video tag= used to insert video in the webpage -->
+
+    <video src="VID20251217230843.mp4" width="200" controls loop controlsList="nodownload"></video>
+    <hr>
+
+    <!-- Q4.Is video tag a semantic tag? -->
+    <!-- Yes, video tag is a semantic tag -->
+
+    <!-- Q5.Print the following using HTML tags : -->
+    <h1>Today is the 9<sup>th</sup> of October and 2<sup>4</sup> = 16 always</h1>
+    <hr>
+
+    <!-- Q6.Print the symbols for copyright & trademark on your webpage. -->
+    <h1>Symbol for Copyright is &copy; &amp; Symbol for Trademark is &trade;</h1>
+    <hr>
+</body>
+</body>
+
+</html>

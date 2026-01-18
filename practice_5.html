@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- tables in html= it represents real life data in the form of tables. the basic syntax for table are as follows. -->
+
+    <!-- table semantics :-
+    thead= wraps the table header
+    tbody= wraps the table body
+    tfoot= wraps the table footer -->
+
+    <table border="black">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th>items</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>chai</td>
+                <td>5-/</td>
+            </tr>
+            <tr>
+                <td>coffee</td>
+                <td>10-/</td>
+            </tr>
+            <tr>
+                <td>sutta</td>
+                <td>12-/</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <hr>
+
+    <!-- colspan and rowspan attributes= it is used to create a cell with a multiple span (rows and columns). -->
+
+    <table border="black">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Items</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- Q1. recreate the following table using html. -->
+
+    <table border="black">
+        <caption>A test table with merged cells</caption>
+        <tbody>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">Average</td>
+                <td rowspan="2">Red eyes</td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+</body>
+
+</html>

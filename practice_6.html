@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- forms in html:-
+    forms are used to collect data from the user.
+    action attribute= it tells what action it will do after submit the form. -->
+
+    <!-- form elements:-
+    input element= takes input from the user. we can take different types of input by passing the type attribute.  -->
+    <!-- placeholder= light text written inside input area. -->
+    <!-- label element= provides caption for an input field -->
+
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label>
+                Username: <input type="text" placeholder="Enter Username">
+            </label>
+        </div>
+        <div>
+            <!-- classical approach of using label tag where id is a unique name and for is used to call the id -->
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="Enter Password" id="Password">
+            <button>Submit</button>
+        </div>
+        <hr>
+
+        <!-- button element:- it is used to perform action on the given data.
+        button types:- submit, reset and normal button. 
+        note: we can use button using input element but that is not recommended. -->
+
+        <!-- <input type="Submit" value="Submit_"> #button using input
+        <button type="button">Click_Me</button>
+        <button type="reset">Reset_data</button>
+        <button type="submit">Submit_data</button> -->
+
+        <!-- name attribute= it is used to identify the form data. -->
+
+        <label for="youtube">Search_Bar: </label>
+        <input type="text" placeholder="Search" id="youtube" name="search_query">
+        <button>Search</button>
+    </form>
+    <hr>
+
+    <!-- Q1. create a search option that redirects its search request to google -->
+    <form action="https://www.google.com/search">
+        <label for="123">Google_Search: </label>
+        <input type="text" id="123" placeholder="Search" name="q">
+        <button type="submit">Search</button>
+    </form>
+    <hr>
+
+    <!-- Q2. create a search option that redirects its search request to reddit -->
+
+    <form action="https://www.reddit.com/search/">
+        <label for="red">Search_Reddit: </label>
+        <input type="text" id="red" placeholder="search in reddit" name="q">
+        <button>Search</button>
+    </form>
+    <hr>
+
+    <!-- checkbox= used to select/tick a text  -->
+    <form action="/server">
+        <input type="checkbox" id="123" name="age" value="above_18">
+        <label for="123">I am 18+</label>
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <!-- radio button= used to select from multiple choices. -->
+    <div>
+        <form action="/server">
+            <input type="radio" name="fruit" id="man" value="Mango">
+            <label for="man">Mango</label>
+            <input type="radio" name="fruit" id="apple" value="Apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana" value="Banana">
+            <label for="banana">Banana</label>
+            <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+
+    <!-- select element= used for dropdown list. we use select and option tag to create a dropdown-->
+    <form action="/action">
+        <div>
+            Choose your Profession:
+            <select name="Profession" id="Profession">
+                <option selected>Select</option>
+                <option value="stu">Student</option>
+                <option value="dev">Developer</option>
+            </select>
+            <button>Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <!-- range= it is used to make slider where user select the value by sliding.  -->
+    <form action="/action">
+        <label for="vol">Select Volume: </label>
+        <input type="range" min="0" max="100" name="vol" value="70" id="vol">
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <!-- textarea element= it is used to take multiline text input from the user.  -->
+    <form action="/action">
+        <label for="feedback">Enter Your Feedback: </label>
+        <textarea name="feedback" id="feedback" placeholder="Enter Your feedback Here."></textarea>
+        <button>Submit</button>
+    </form>
+    <hr>
+</body>
+
+</html>
